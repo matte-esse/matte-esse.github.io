@@ -1,0 +1,181 @@
+/* Font Import Section - Uncomment different combinations to try them */
+
+/* Current Active Fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Source+Serif+Pro:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@400;600&display=swap');
+
+
+/* Option 1 - Modern Tech  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Merriweather:ital,wght@0,400;0,700;1,400&family=Work+Sans:wght@400;600&display=swap');
+
+
+/* Option 2 - Classic Academic */
+@import url('https://fonts.googleapis.com/css2?family=Spectral:wght@700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:wght@400;600&display=swap');
+
+
+/* Option 3 - Clean Professional  */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Crimson+Pro:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;600&display=swap');
+
+
+
+/* Option 4 - Modern Elegant */
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@700&family=Cormorant:ital,wght@0,400;0,700;1,400&family=Outfit:wght@400;600&display=swap');
+
+
+
+:root {
+    --maroon: #800000;
+    --dark-gray: #333333;
+
+
+    /* Option 2 - Classic Academic */
+    --title-font: 'Spectral', serif;
+    --serif-font: 'Libre Baskerville', serif;
+    --body-font: 'Source Sans Pro', sans-serif;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    line-height: 1.6;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.top-bar {
+    background-color: var(--maroon);
+    height: 60px;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+main {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.title {
+    font-family: var(--title-font);
+    font-size: 4rem;
+    letter-spacing: 0.5em;
+    margin-bottom: 1rem;
+    color: var(--maroon);
+}
+
+.subtitle {
+    font-family: var(--serif-font);
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: var(--dark-gray);
+}
+
+.big-letter {
+    font-size: 130%;
+    font-weight: bold;
+}
+
+.description {
+    color: var(--dark-gray);
+    max-width: 800px;
+    margin: 0 auto 1rem;
+    text-align: justify;
+}
+
+.contact {
+    margin-bottom: 2rem;
+}
+
+.divider {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 2rem auto;
+    width: 80%;
+}
+
+.columns {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.column {
+    flex: 1;
+    text-align: left;
+}
+
+.column h3 {
+    font-family: var(--serif-font);
+    color: var(--maroon);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.references {
+    text-align: left;
+    margin-top: 3rem;
+    border-top: 1px solid #ccc;
+    padding-top: 2rem;
+    font-size: 0.9rem;
+}
+
+.references p {
+    margin-bottom: 1rem;
+}
+
+.citation {
+    color: var(--maroon);
+    text-decoration: none;
+}
+
+.citation:hover {
+    text-decoration: underline;
+}
+
+.citation:target {
+    background-color: #ffeb3b;
+    padding: 0.2em;
+}
+
+a {
+    color: var(--maroon);
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+i {
+    font-family: var(--serif-font);
+    font-style: italic;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .title {
+        font-size: 2.5rem;
+        letter-spacing: 0.3em;
+    }
+    
+    .subtitle {
+        font-size: 1rem;
+    }
+    
+    .columns {
+        flex-direction: column;
+    }
+    
+    .description {
+        padding: 0 1rem;
+    }
+}
